@@ -1,11 +1,31 @@
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+const decrease = document.getElementById('decrease')
+const increase = document.getElementById('increase')
+const colour = document.getElementById('color')
+const clear = document.getElementById('clear')
+const syze = document.getElementById('size')
+
 
 let size = 20
 let isPressed = false
 let color = 'black'
 let x
 let y
+
+clear.addEventListener('click', (e)=>{
+    location.reload();
+})
+
+decrease.addEventListener('click', (e)=>{
+    size = 20 - 15;
+})
+increase.addEventListener('click', (e)=>{
+    size = 20 + 15
+})
+colour.addEventListener('click', (e)=>{
+    color = colour
+})
 
 canvas.addEventListener('mousedown',(e) =>{
      isPressed = true
