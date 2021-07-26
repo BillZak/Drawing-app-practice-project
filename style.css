@@ -21,7 +21,7 @@ canvas{
 }
 
 .toolbox > * {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border: none;
     display: inline-flex;
     align-items: center;
