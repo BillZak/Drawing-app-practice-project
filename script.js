@@ -4,7 +4,6 @@ const decrease = document.getElementById('decrease')
 const increase = document.getElementById('increase')
 const colour = document.getElementById('color')
 const clear = document.getElementById('clear')
-const syze = document.getElementById('size')
 
 
 let size = 20
